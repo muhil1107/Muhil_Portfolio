@@ -1,0 +1,76 @@
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f0f1a;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3 {
+  margin: 0.5em 0;
+  color: #fff;
+}
+
+/* Ensure container scaling on all screen sizes */
+section {
+  padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Mobile and Tablet */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left {
+    margin-bottom: 2rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .services,
+  .stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .filter-tabs {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .project-card {
+    width: 100% !important;
+    max-width: 300px;
+  }
+
+  .modal {
+    width: 90%;
+    padding: 1.2rem;
+  }
+}

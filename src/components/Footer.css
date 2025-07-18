@@ -1,0 +1,40 @@
+.footer {
+  background-color: #111;
+  color: #eee;
+  padding: 15px 30px;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* ensures responsiveness on smaller screens */
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-left {
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.footer-right {
+  text-align: right;
+  font-weight: bold;
+}
+
+.footer-icon {
+  margin: 0 10px;
+  font-size: 1.4rem;
+  color: #eee;
+  transition: color 0.3s ease;
+}
+
+.footer-icon:hover {
+  color: #f44336;
+}
